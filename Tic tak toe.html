@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Tic Tac Toe - AI Mode</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="container">
+    <h1>Tic Tac Toe</h1>
+
+    <div class="mode-select">
+      <button onclick="setMode('pvp')">Player vs Player</button>
+      <button onclick="setMode('ai')">Player vs AI</button>
+    </div>
+
+    <div class="scoreboard">
+      <span>Player (X): <span id="player-score">0</span></span>
+      <span>AI (O): <span id="ai-score">0</span></span>
+      <span>Draws: <span id="draw-score">0</span></span>
+    </div>
+
+    <div class="board" id="board">
+      <!-- 9 cells will be inserted by JS -->
+    </div>
+
+    <div class="popup hide" id="popup">
+      <p id="message"></p>
+      <button onclick="restartGame()">Play Again</button>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
